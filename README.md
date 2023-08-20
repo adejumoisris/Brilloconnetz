@@ -21,7 +21,7 @@ If any validation fails, the application will return a message specifying which 
 
 All validation checks for the four fields (username, email, password, and date of birth) are performed concurrently without using Threads or ExecutorServices.
 
-To achieve the concurrent valdation checks, ComaparableFuture was use
+To achieve the concurrent valdation checks, CompletableFuture was use
 
 ### C: Generating a Signed JWT
 
