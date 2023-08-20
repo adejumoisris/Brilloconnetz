@@ -21,6 +21,8 @@ If any validation fails, the application will return a message specifying which 
 
 All validation checks for the four fields (username, email, password, and date of birth) are performed concurrently without using Threads or ExecutorServices.
 
+To achieve the concurrent valdation checks, ComaparableFuture was use
+
 ### C: Generating a Signed JWT
 
 Building on the previous solution, a method is implemented to generate a signed JSON Web Token (JWT). This token can be returned upon successful validation.
