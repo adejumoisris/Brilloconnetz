@@ -22,6 +22,7 @@ public class GeneratingJWT {
             Algorithm algorithm = Algorithm.HMAC256(SECRETE_KEY);
             JWT.require(algorithm).build().verify(token);
             return true;
+
         }catch (JWTVerificationException e){
             return false;
         }
